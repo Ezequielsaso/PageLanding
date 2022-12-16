@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(231, 229, 229);
+}
+
+header {
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+.logos {
+  height: 50px;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container-navbar {
+  border-bottom: 1px solid rgb(231, 229, 229);
+}
+
+.container {
+  background-color: aliceblue;
+  margin: 30px 50px;
+
+  height: 700px;
+}
