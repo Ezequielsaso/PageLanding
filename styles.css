@@ -30,16 +30,30 @@ header {
     top: 0;
     position: -webkit-sticky;
     position: sticky;
+    box-shadow: 0px 1px 10px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .logos {
     height: 50px;
+    width: 50px;
+    transition: all 400ms ease;
+}
+.logos:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
 }
 .navbar-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-right: 120px;
+}
+li:hover {
+    transform: translateY(-14%);
 }
 
 .container-navbar {
@@ -64,11 +78,12 @@ header {
 
 .hero {
     margin-top: 200px;
-    display: flex;
+
     justify-content: center;
     height: 200px;
     display: flex;
     gap: 150px;
+    margin-bottom: 150px;
 }
 .Info {
     font-size: 18px;
@@ -80,15 +95,21 @@ header {
     margin-top: 20px;
     color: gray;
     font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+    cursor: default;
 }
+#info2:hover {
+    transform: translateY(-10%);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+}
+
 h1 {
     width: 250px;
 }
 
 .container-img {
-    width: 14%;
-    height: 500px;
-   
 }
 
 .boton {
@@ -102,6 +123,11 @@ h1 {
     font-weight: 790;
     margin-right: 6px;
     cursor: pointer;
+    transition: all 400ms ease;
+}
+.boton:hover {
+    cursor: default;
+    transform: translateY(-14%);
 }
 .boton2 {
     background-color: aliceblue;
@@ -113,10 +139,278 @@ h1 {
     margin-right: 6px;
     font-weight: 850;
     cursor: pointer;
+    transition: all 400ms ease;
+}
+.boton2:hover {
+    cursor: default;
+    transform: translateY(-14%);
 }
 
 .texto-informativo {
     font-size: 15px;
     color: gray;
-    width: 600px;
+    width: 430px;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+    cursor: default;
+}
+.texto-informativo:hover {
+    transform: translateY(-10%);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+}
+
+.container img {
+    transition: all 400ms ease;
+
+    width: 300px;
+}
+.container img:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+
+#titulo {
+    width: 500px;
+    margin-top: 110px;
+    font-weight: 600;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(49, 29, 29), rgb(73, 28, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+    position: static;
+}
+
+#titulo2 {
+    background: -webkit-linear-gradient(rgb(49, 29, 29), rgb(73, 28, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+    position: static;
+    margin-bottom: 1px;
+}
+
+#subrayado {
+    text-decoration-line: underline;
+}
+
+.categoria {
+    margin-top: 70px;
+}
+
+.menu-icon {
+    max-width: 15%;
+    margin-left: 260px;
+}
+
+#cart-toggle,
+#menu-toggle,
+.menu-label {
+    display: none;
+    align-items: flex-end;
+    position: static;
+}
+
+#cart-toggle:checked + .cart {
+    display: flex;
+}
+
+#titulo::first-letter {
+    font-size: 55px;
+}
+
+/* Ventajas */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#advantages {
+    margin-top: 310px;
+    color: (rgb 49, 29, 29);
+    -webkit-background-clip: text;
+    width: 400px;
+    font-size: 40px;
+}
+
+#ventaja1 {
+    background: -webkit-linear-gradient(rgb(49, 29, 29), rgb(73, 28, 128));
+    -webkit-background-clip: text;
+    margin-left: -40px;
+
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+/* Cards para los beneficios */
+
+.container-card {
+    display: flex;
+    margin-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+    width: 89%;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+.card {
+    width: 450px;
+}
+.card2 {
+    width: 400px;
+}
+.card3 {
+    width: 400px;
+}
+/* Centrar los h2 (Llamados "beneficios" */
+#centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Parrafo de las Cards */
+
+#parrafo {
+    margin-top: 30px;
+    color: gray;
+}
+
+/* Contactanos */
+
+#acomodar {
+    margin: 50px;
+    margin-left: 210px;
+    font-size: 40px;
+    transition: all 400ms ease;
+}
+#acomodar:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+
+.container-informacion {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#separacion-parrafo1 {
+    margin-bottom: 20px;
+    color: gray;
+    margin-top: 25px;
+    transition: all 400ms ease;
+}
+#separacion-parrafo1:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+#separacion-parrafo2 {
+    margin-bottom: 20px;
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 400ms ease;
+}
+#separacion-parrafo2:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+#separacion-parrafo3 {
+    margin-bottom: 6px;
+    color: gray;
+    margin-left: 3px;
+    transition: all 400ms ease;
+}
+#separacion-parrafo3:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+
+.informacion {
+    margin: 10px 210px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#titulo3 {
+    margin-bottom: 20px;
+    transition: all 400ms ease;
+}
+#titulo3:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+/* Iconos de la Informacion */
+svg {
+    width: 20px;
+    transition: all 400ms ease;
+}
+svg:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+
+.imagen1 {
+    display: flex;
+    gap: 4px;
+}
+
+.container-informacion {
+    display: flex;
+    gap: -20px;
+}
+
+footer {
+    width: 100%;
+}
+
+.container-imagen img {
+    width: 7%;
+
+    justify-content: center;
+    align-items: center;
+}
+.container-img2 img {
+    width: 100%;
+    margin-left: -80px;
+    margin-top: 25px;
+    transition: all 400ms ease;
+}
+
+.container-img2 img:hover {
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    cursor: default;
+    transform: translateY(-10%);
+}
+
+#derechos {
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 15px;
 }

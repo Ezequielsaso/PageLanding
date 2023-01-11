@@ -1,0 +1,39 @@
+/* Tablet */
+
+@media (max-width: 900px) {
+    .container img {
+        width: 200px;
+        position: initial;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 883.2px) {
+    #titulo {
+        width: 400px;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 883.2px) {
+    .texto-informativo {
+        width: 360px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 883.2px) {
+    .container img {
+        width: 180px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        left: -50px;
+    }
+
+    .navbar-list {
+        margin-right: 80px;
+    }
+}
