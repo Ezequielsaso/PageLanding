@@ -51,15 +51,16 @@ header {
     justify-content: center;
     gap: 30px;
     margin-right: 120px;
+    font: bold 90% monospace;
 }
 li:hover {
     transform: translateY(-14%);
 }
 
 .container-navbar {
-    border-bottom: 2px solid rgb(231, 229, 229);
-    background-color: rgb(255, 255, 255);
-    background: #ffefba; /* fallback for old browsers */
+    border-bottom: 2px solid rgb(84, 84, 84);
+    background-color: rgb(0, 0, 0);
+    background: #dcd0d0; /* fallback for old browsers */ /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
         #ffffff,
@@ -104,7 +105,12 @@ h1 {
     width: 250px;
 }
 
-.container-img {
+.copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 }
 
 .boton {
@@ -416,29 +422,21 @@ footer {
 
 .copyright {
     width: 100%;
-    padding: 30px;
-    box-shadow: 1px 2px 5px;
-    border: 2px solid rgb(71, 68, 68);
+
+    padding: 12px;
+    box-shadow: 0px 1px 10px;
+    border-top: 1px solid black;
     -webkit-text-fill-color: rgb(94, 79, 79);
     -webkit-text-stroke: 1px black;
     font-size: 20px;
     background-color: rgb(255, 255, 255);
-    background: #ffefba; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #a19999,
-        #b3a371
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: #dcd0d0; /* fallback for old browsers */
 }
 
 .logos2 {
-    height: 90px;
-    width: 90px;
+    height: 40px;
+    width: 40px;
     border-radius: 10px;
-}
-
-#colorcopy {
-    color: gray;
 }
 
 html {
