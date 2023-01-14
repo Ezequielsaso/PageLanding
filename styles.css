@@ -127,7 +127,7 @@ h1 {
     transition: all 400ms ease;
 }
 .boton:hover {
-    cursor: default;
+    cursor: pointer;
     transform: translateY(-14%);
 }
 .boton2 {
@@ -143,7 +143,8 @@ h1 {
     transition: all 400ms ease;
 }
 .boton2:hover {
-    cursor: default;
+    cursor: pointer;
+
     transform: translateY(-14%);
 }
 
